@@ -1,0 +1,32 @@
+{
+  "name": "Storyteller",
+  "version": "1.0.0",
+  "description": "Generates narratives.",
+  "main": "storyteller.js",
+  "scripts": {
+    "script-name": "babel-node script.js",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanielScottStevens/storyteller.git"
+  },
+  "author": "Nathaniel Stevens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NathanielScottStevens/storyteller/issues"
+  },
+  "homepage": "https://github.com/NathanielScottStevens/storyteller#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5"
+  },
+  "dependencies": {
+    "chance": "^1.0.4"
+  }
+}
