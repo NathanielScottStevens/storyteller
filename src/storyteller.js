@@ -64,3 +64,56 @@ class Sell {
         return `${this._agent} sold a ${this._item}`;
     }
 }
+
+class Steal {
+    constructor(agent, item, source) {
+        this._agent = agent;
+        this._item = item;
+        this._source = source;
+    }
+
+    toString() {
+        return `${this._agent} stole a ${this._item} from ${this._source}`;
+    }
+}
+
+class Meet {
+    constructor(agent, other) {
+        this._agent = agent;
+        this._other = other;
+    }
+
+    toString() {
+        return `${this._agent} met ${this._other}`;
+    }
+}
+
+function inciting(){
+    return "An inciting incidence occurs.";
+}
+
+function obstacle(){
+    return "An obstacle presents itself.";
+}
+
+function success(){
+    return "The obstacle is overcome.";
+}
+
+function failure(){
+    return "The obstacle is not overcome.";
+}
+
+function resolution(){
+    return "The inciting event is resolved.";
+}
+
+function generate(){
+    console.log(inciting());
+    console.log(obstacle());
+    console.log(success());
+    console.log(failure());
+    console.log(resolution());
+}
+
+generate();
