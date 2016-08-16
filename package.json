@@ -4,11 +4,9 @@
   "description": "Generates narratives.",
   "main": "storyteller.js",
   "scripts": {
-    "script-name": "babel-node script.js",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "build": "babel src --presets babel-preset-es2015 -d lib",
     "generate": "node lib/storyteller.js",
-    "g": "npm run generate"
   },
   "repository": {
     "type": "git",
