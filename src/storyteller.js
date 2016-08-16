@@ -108,6 +108,14 @@ function resolution(){
     return "The inciting event is resolved.";
 }
 
+class SaveSickRelative {
+    constructor(protag){
+        this._protag = protag;
+        this._relative = relative;
+
+    }
+}
+
 function generate(){
     console.log(inciting());
     console.log(obstacle());

@@ -5,7 +5,7 @@
   "main": "storyteller.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
-    "build": "babel src --presets babel-preset-es2015 -d lib",
+    "build": "babel src -d lib",
     "generate": "node lib/storyteller.js"
   },
   "repository": {
